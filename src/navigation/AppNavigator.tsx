@@ -5,6 +5,7 @@ import { useTheme } from 'react-native-paper';
 import { HomeScreen } from '../screens/HomeScreen';
 import { TransactionsScreen } from '../screens/TransactionsScreen';
 import { AddTransactionScreen } from '../screens/AddTransactionScreen';
+import { StatisticsScreen } from '../screens/StatisticsScreen';
 import { RootStackParamList } from '../types/navigation';
 
 // Importaremos las pantallas cuando las creemos
@@ -40,6 +41,11 @@ export const AppNavigator = () => {
           name="AddTransaction" 
           component={AddTransactionScreen} 
           options={{ title: 'Agregar Transacción' }}
+        />
+        <Stack.Screen 
+          name="Statistics" 
+          component={StatisticsScreen} 
+          options={{ title: 'Estadísticas' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

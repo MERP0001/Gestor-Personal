@@ -67,6 +67,13 @@ export const HomeScreen = () => {
 
       <View style={styles.actionsContainer}>
         <IconButton
+          icon="chart-bar"
+          onPress={() => navigation.navigate('Statistics')}
+          style={[styles.actionButton, { backgroundColor: '#6B46C1' }]}
+          iconColor="white"
+          size={24}
+        />
+        <IconButton
           icon="eye"
           onPress={() => navigation.navigate('Transactions')}
           style={[styles.actionButton, { backgroundColor: '#6B46C1' }]}

@@ -4,6 +4,7 @@ export type RootStackParamList = {
   Home: undefined;
   Transactions: undefined;
   AddTransaction: undefined;
+  Statistics: undefined;
 };
 
 export type NavigationProps = NativeStackNavigationProp<RootStackParamList>; 
