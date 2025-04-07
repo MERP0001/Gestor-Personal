@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/gestor-personal-server",
+  "sourceRoot": "apps/gestor-personal-server/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/gestor-personal-server/tsconfig.app.json"
+  },
+  "projects": {
+    "gestor-personal-server": {
+      "type": "application",
+      "root": "apps/gestor-personal-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/gestor-personal-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gestor-personal-server/tsconfig.app.json"
+      }
+    },
+    "gestor-financiero": {
+      "type": "application",
+      "root": "apps/gestor-financiero",
+      "entryFile": "main",
+      "sourceRoot": "apps/gestor-financiero/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gestor-financiero/tsconfig.app.json"
+      }
+    }
+  }
+}
